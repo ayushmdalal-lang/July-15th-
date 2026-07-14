@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy Birthday Muskan 🥰</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="sparkle-container"></div>
+    <div class="bg-grain"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+
+    <!-- SLIDE 1: Welcome -->
+    <div class="slide active" id="slide-1">
+        <div class="slide-content welcome-slide">
+            <div class="welcome-text">
+                <p class="line line-1 fade-up">Hey <span class="name">H.Muskan</span> 🫶</p>
+                <p class="line line-2 fade-up">Aaj ka din thoda special hai...</p>
+                <p class="line line-3 fade-up">So I thought... why not make something</p>
+                <p class="line line-4 fade-up">simple for you 🌟</p>
+            </div>
+            <button class="tap-btn fade-up" onclick="nextSlide()">
+                <span class="tap-text">Tap to begin</span>
+                <span class="tap-sparkle">✦</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- SLIDE 2: Video 1 -->
+    <div class="slide" id="slide-2">
+        <div class="media-slide">
+            <video id="video-1" src="clip1.mp4" playsinline></video>
+            <button class="next-btn hidden" onclick="nextSlide()">Next →</button>
+        </div>
+    </div>
+
+    <!-- SLIDE 3: Photo -->
+    <div class="slide" id="slide-3">
+        <div class="media-slide photo-slide">
+            <div class="photo-wrapper">
+                <img src="photo.jpg" alt="Photo">
+            </div>
+            <button class="next-btn visible" data-always-visible="true" onclick="nextSlide()">Next →</button>
+        </div>
+    </div>
+
+    <!-- SLIDE 4: Video 2 -->
+    <div class="slide" id="slide-4">
+        <div class="media-slide">
+            <video id="video-2" src="clip2.mp4" playsinline></video>
+            <button class="next-btn hidden" onclick="nextSlide()">Next →</button>
+        </div>
+    </div>
+
+    <!-- SLIDE 5: Video 3 -->
+    <div class="slide" id="slide-5">
+        <div class="media-slide">
+            <video id="video-3" src="clip3.mp4" playsinline></video>
+            <button class="next-btn hidden" onclick="nextSlide()">Next →</button>
+        </div>
+    </div>
+
+    <!-- SLIDE 6: Final Message -->
+    <div class="slide" id="slide-6">
+        <div class="slide-content final-slide">
+            <div class="final-message">
+                <p class="fade-up final-line-1">Happiest birthday to you</p>
+                <p class="fade-up final-line-2">may God bless you 🎂🫶🏻🩷</p>
+                <p class="fade-up final-line-3">lyu 🌷</p>
+                <div class="divider fade-up"></div>
+                <p class="fade-up final-line-4">Jiske vajah se mile the vo tho rahi nahi</p>
+                <p class="fade-up final-line-5">pr apni he vibe match ho gye 🤭✨💫</p>
+                <p class="fade-up final-line-6">Photos itne he the 🥰🩷</p>
+            </div>
+            <button class="replay-btn hidden" onclick="replay()">Once more? 🩷</button>
+            <div class="hearts-container">
+                <span class="floating-heart">🩷</span>
+                <span class="floating-heart">💜</span>
+                <span class="floating-heart">🩷</span>
+                <span class="floating-heart">💜</span>
+                <span class="floating-heart">🩷</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
